@@ -18,7 +18,6 @@ const routes = [
   },
   {
     path: '/portfolio1',
-    name: 'portfolio1',
     component: Portfolio1
   }
 ]
