@@ -88,7 +88,6 @@ export default defineComponent({
       background-position: center center;
       background-size: cover;
 
-
       .header {
         font-size: 60px;
         font-weight: bold;
