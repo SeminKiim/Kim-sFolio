@@ -21,7 +21,8 @@
     <div id="portfolio">
       <div class="header">포트폴리오</div>
       <div class="list">
-        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left" @click=movePage()>
+        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left"
+          @click="movePage('./portfolio1 ')">
         </div>
         <div class="item" style="background-image:url(/portfolio/top1.jpg)" data-aos="fade-right"></div>
         <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
