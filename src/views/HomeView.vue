@@ -2,16 +2,16 @@
   <div>
     <div id="top">
       <swiper class="swiper" :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-        <swiper-slide style="background-image:url(/top1.jpg)" class="slide">
+        <swiper-slide style="background-image:url(/portfolio/top1.jpg)" class="slide">
 
           <div class="header">명지전문대 정보통신공학과 김세민
           </div>
         </swiper-slide>
-        <swiper-slide class="slide" style="background-image:url(/top2.jpg)">
+        <swiper-slide class="slide" style="background-image:url(/portfolio/top2.jpg)">
           <div class="header">명지전문대 정보통신공학과 김세민
           </div>
         </swiper-slide>
-        <swiper-slide class="slide" style="background-image:url(/top3.jpg)">
+        <swiper-slide class="slide" style="background-image:url(/portfolio/top3.jpg)">
           <div class="header">명지전문대 정보통신공학과 김세민
           </div>
         </swiper-slide>
@@ -21,13 +21,13 @@
     <div id="portfolio">
       <div class="header">포트폴리오</div>
       <div class="list">
-        <div class="item" style="background-image:url(/top2.jpg)" data-aos="fade-left" @click=movePage()>
+        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left" @click=movePage()>
         </div>
-        <div class="item" style="background-image:url(/top1.jpg)" data-aos="fade-right"></div>
-        <div class="item" style="background-image:url(/top3.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/top1.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/top3.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/top2.jpg)" data-aos="fade-left"></div>
+        <div class="item" style="background-image:url(/portfolio/top1.jpg)" data-aos="fade-right"></div>
+        <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
+        <div class="item" style="background-image:url(/portfolio/top1.jpg)" data-aos="fade-left"></div>
+        <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
+        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left"></div>
       </div>
     </div>
   </div>
