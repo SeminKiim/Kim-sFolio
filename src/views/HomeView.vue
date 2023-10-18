@@ -2,12 +2,23 @@
   <div>
     <div id="greetings">
       <div class="hey">Hey there!</div>
-      <div class="title">안녕하세요.<br>성장하는 개발자 김세민입니다.</div>
-
+      <div class="title">안녕하세요.<br>빠르게 배우는 김세민입니다.</div>
     </div>
 
     <div id="skills">
-      <h1>Technical Skills</h1>
+      <div>Technical Skills</div>
+      <v-row class="item">
+        <v-col cols="4"><v-img src="../assets/skills/html5.png" aspect-ratio="1/1"></v-img></v-col>
+        <v-col cols="4"><v-img src="../assets/skills/css.png" aspect-ratio="1/1"></v-img>></v-col>
+        <v-col><v-img src="../assets/skills/javascript.png" aspect-ratio="1/1"></v-img></v-col>
+        <v-col><v-img src="../assets/skills/wordpress.png" aspect-ratio="1/1"></v-img></v-col>
+      </v-row>
+      <v-row class="item">
+        <v-col cols="4"><v-img src="../assets/skills/java.png"></v-img></v-col>
+        <v-col cols="4"><v-img src="../assets/skills/mysql.png"></v-img></v-col>
+        <v-col><v-img src="../assets/skills/AdobeXD.png"></v-img></v-col>
+        <v-col><v-img src="../assets/skills/figma.png"></v-img></v-col>
+      </v-row>
     </div>
 
     <div id="portfolio">
@@ -22,6 +33,10 @@
         <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
         <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left"></div>
       </div>
+    </div>
+
+    <div id="contact">
+      <div>Contact</div>
     </div>
   </div>
 </template>
@@ -47,6 +62,7 @@ export default defineComponent({
     Swiper,
     SwiperSlide,
   },
+
   setup() {
     const onSwiper = (swiper) => {
       console.log(swiper);
@@ -59,9 +75,11 @@ export default defineComponent({
       onSlideChange,
     };
   },
+
   mounted() {
     aos.init();
   },
+
   methods: {
     movePage(path) {
       this.$router.push(path)
@@ -78,13 +96,13 @@ export default defineComponent({
   font-style: normal;
 }
 
+
 #greetings {
   height: 100vh;
   font-family: 'Atomy-Bold';
   color: #6b4d38;
   font-size: 2rem;
   background-color: #f7f2f0;
-
   padding: 10%;
 
   .hey {
@@ -92,33 +110,22 @@ export default defineComponent({
     text-align: center;
     margin-bottom: 50px;
   }
-
-  .swiper {
-    height: 100vh;
-
-    .slide {
-      background-position: center center;
-      background-size: cover;
-
-      .header {
-        font-size: 60px;
-        font-weight: bold;
-        height: 100%;
-        vertical-align: middle;
-        text-align: center;
-      }
-    }
-  }
 }
 
+
 #skills {
-  height: 100vh;
   font-family: 'Atomy-Bold';
   color: #f7f2f0;
   font-size: 1.3rem;
   background-color: #6b4d38;
   padding: 10%;
+
+  .item {
+    width: 100%;
+  }
+
 }
+
 
 #portfolio {
   font-family: 'Atomy-Bold';
@@ -149,5 +156,14 @@ export default defineComponent({
       aspect-ratio: 1/1;
     }
   }
+}
+
+
+#contact {
+  font-family: 'Atomy-Bold';
+  color: #f7f2f0;
+  font-size: 1.3rem;
+  background-color: #6b4d38;
+  padding: 10%;
 }
 </style>
