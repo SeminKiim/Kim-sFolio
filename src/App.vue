@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
@@ -16,3 +16,8 @@ export default {
   }),
 }
 </script>
+<style>
+* {
+  background-color: #f7f2f0;
+}
+</style>

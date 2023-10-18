@@ -1,21 +1,8 @@
 <template>
   <div>
-    <div id="top">
-      <swiper class="swiper" :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange">
-        <swiper-slide style="background-image:url(/portfolio/top1.jpg)" class="slide">
+    <div id="greetings">
+      <h1 class="hello">안녕하세요!<br>김세민의 2023 포트폴리오 입니다.</h1>
 
-          <div class="header">명지전문대 정보통신공학과 김세민
-          </div>
-        </swiper-slide>
-        <swiper-slide class="slide" style="background-image:url(/portfolio/top2.jpg)">
-          <div class="header">명지전문대 정보통신공학과 김세민
-          </div>
-        </swiper-slide>
-        <swiper-slide class="slide" style="background-image:url(/portfolio/top3.jpg)">
-          <div class="header">명지전문대 정보통신공학과 김세민
-          </div>
-        </swiper-slide>
-      </swiper>
     </div>
 
     <div id="portfolio">
@@ -79,8 +66,20 @@ export default defineComponent({
 </script>
 
 <style lang="less">
-#top {
+@font-face {
+  font-family: 'Atomy-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Atomy-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#greetings {
   height: 100vh;
+  font-family: 'Atomy-Bold';
+  color: #6b4d38;
+  font-size: 1.3rem;
+
+  margin: 10%;
 
   .swiper {
     height: 100vh;
