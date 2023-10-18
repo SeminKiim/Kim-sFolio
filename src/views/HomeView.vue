@@ -1,8 +1,13 @@
 <template>
   <div>
     <div id="greetings">
-      <h1 class="hello">안녕하세요!<br>김세민의 2023 포트폴리오 입니다.</h1>
+      <div class="hey">Hey there!</div>
+      <div class="title">안녕하세요.<br>성장하는 개발자 김세민입니다.</div>
 
+    </div>
+
+    <div id="skills">
+      <h1>Technical Skills</h1>
     </div>
 
     <div id="portfolio">
@@ -77,9 +82,16 @@ export default defineComponent({
   height: 100vh;
   font-family: 'Atomy-Bold';
   color: #6b4d38;
-  font-size: 1.3rem;
+  font-size: 2rem;
+  background-color: #f7f2f0;
 
-  margin: 10%;
+  padding: 10%;
+
+  .hey {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
   .swiper {
     height: 100vh;
@@ -99,7 +111,23 @@ export default defineComponent({
   }
 }
 
+#skills {
+  height: 100vh;
+  font-family: 'Atomy-Bold';
+  color: #f7f2f0;
+  font-size: 1.3rem;
+  background-color: #6b4d38;
+  padding: 10%;
+}
+
 #portfolio {
+  font-family: 'Atomy-Bold';
+  color: #6b4d38;
+  font-size: 1.3rem;
+  background-color: #f7f2f0;
+
+  padding: 10%;
+
   .header {
     text-align: center;
     font-size: 40px;
