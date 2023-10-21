@@ -4,40 +4,69 @@
       <div class="hey">Hey there!</div>
       <div class="title">안녕하세요.<br>빠르게 배우는 김세민입니다.</div>
     </div>
-
+  </div>
+  <div>
     <div id="skills">
-      <div>Technical Skills</div>
-      <v-row class="item">
-        <v-col cols="4"><v-img src="../assets/skills/html5.png" aspect-ratio="1/1"></v-img></v-col>
-        <v-col cols="4"><v-img src="../assets/skills/css.png" aspect-ratio="1/1"></v-img>></v-col>
-        <v-col><v-img src="../assets/skills/javascript.png" aspect-ratio="1/1"></v-img></v-col>
-        <v-col><v-img src="../assets/skills/wordpress.png" aspect-ratio="1/1"></v-img></v-col>
-      </v-row>
-      <v-row class="item">
-        <v-col cols="4"><v-img src="../assets/skills/java.png"></v-img></v-col>
-        <v-col cols="4"><v-img src="../assets/skills/mysql.png"></v-img></v-col>
-        <v-col><v-img src="../assets/skills/AdobeXD.png"></v-img></v-col>
-        <v-col><v-img src="../assets/skills/figma.png"></v-img></v-col>
-      </v-row>
+      <div class="header">Technical Skills</div>
+      <v-container>
+        <v-row align-content="center">
+          <v-col cols="3"><v-img src="../assets/skills/html5.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/css.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/javascript.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/wordpress.png" class="skillItem"></v-img></v-col>
+        </v-row>
+        <v-row align-content="center">
+          <v-col cols="3"><v-img src="../assets/skills/java.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/mysql.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/AdobeXD.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/figma.png" class="skillItem"></v-img></v-col>
+        </v-row>
+      </v-container>
     </div>
+  </div>
 
-    <div id="portfolio">
-      <div class="header">포트폴리오</div>
-      <div class="list">
-        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left"
-          @click="movePage('./portfolio1 ')">
-        </div>
-        <div class="item" style="background-image:url(/portfolio/top1.jpg)" data-aos="fade-right"></div>
-        <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/portfolio/top1.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/portfolio/top3.jpg)" data-aos="fade-left"></div>
-        <div class="item" style="background-image:url(/portfolio/top2.jpg)" data-aos="fade-left"></div>
-      </div>
+  <div>
+    <div id="timeline">
+      <div class="header">Timeline</div>
+      <v-container>
+        <v-row>
+          <v-col cols="3" class="timeline-col">
+            <v-img class="timeline-item" src="../assets/2020.png" data-aos="fade-up"></v-img>
+          </v-col>
+          <v-col cols="9" data-aos="fade-up" class="info">
+            <v-row class="info-header">명지전문대 정보통신공학과</v-row>
+            <v-row>전문학사 졸 (2023.02)</v-row>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="3" class="timeline-col"><v-img class="timeline-item" src="../assets/2022.png"
+              data-aos="fade-up"></v-img></v-col>
+          <v-col cols="9" data-aos="fade-up" class="info">
+            <v-row class="info-header">하계 글로벌 진로취업연수</v-row>
+            <v-row>2022.07</v-row>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="3" class="timeline-col"><v-img class="timeline-item" src="../assets/2023.png"
+              data-aos="fade-up"></v-img>
+          </v-col>
+          <v-col cols="9" data-aos="fade-up" class="info">
+            <v-row class="info-header">명지전문대 정보통신공학과 전공심화 과정</v-row>
+            <v-row>신입학 (2023.02)</v-row>
+          </v-col>
+        </v-row>
+      </v-container>
     </div>
+  </div>
 
-    <div id="contact">
-      <div>Contact</div>
-    </div>
+  <div id="portfolio">
+    <div class="header">포트폴리오</div>
+
+  </div>
+
+  <div id="contact">
+    <div class="header">Contact</div>
+
   </div>
 </template>
 
@@ -57,6 +86,11 @@ import aos from 'aos'
 
 export default defineComponent({
   name: 'HomeView',
+  data() {
+    return {
+
+    };
+  },
 
   components: {
     Swiper,
@@ -106,12 +140,11 @@ export default defineComponent({
   padding: 10%;
 
   .hey {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
     margin-bottom: 50px;
   }
 }
-
 
 #skills {
   font-family: 'Atomy-Bold';
@@ -119,28 +152,42 @@ export default defineComponent({
   font-size: 1.3rem;
   background-color: #6b4d38;
   padding: 10%;
+  flex-grow: 0;
 
-  .item {
-    width: 100%;
+  .skillItem {
+    width: 10vw;
+    margin: 30px;
+  }
+}
+
+#timeline {
+  font-family: 'Atomy-Bold';
+  color: #6b4d38;
+  font-size: 1.3rem;
+  background-color: #f7f2f0;
+  padding: 10%;
+
+  .timeline-col {
+    padding: 0;
   }
 
+  .info {
+    padding: 11%;
+
+    .info-header {
+      font-size: 1.5em;
+    }
+  }
 }
 
 
 #portfolio {
   font-family: 'Atomy-Bold';
-  color: #6b4d38;
+  color: #f7f2f0;
   font-size: 1.3rem;
-  background-color: #f7f2f0;
+  background-color: #6b4d38;
 
   padding: 10%;
-
-  .header {
-    text-align: center;
-    font-size: 40px;
-    margin: 0 auto;
-
-  }
 
   .list {
     display: grid;
@@ -161,9 +208,16 @@ export default defineComponent({
 
 #contact {
   font-family: 'Atomy-Bold';
-  color: #f7f2f0;
+  color: #6b4d38;
   font-size: 1.3rem;
-  background-color: #6b4d38;
+  background-color: #f7f2f0;
   padding: 10%;
+}
+
+.header {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 50px;
+
 }
 </style>
