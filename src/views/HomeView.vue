@@ -10,7 +10,7 @@
       <div class="header">Technical Skills</div>
       <v-container>
         <v-row align-content="center">
-          <v-col cols="3"><v-img src="../assets/skills/html5.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="../assets/skills/html5" class="skillItem"></v-img></v-col>
           <v-col cols="3"><v-img src="../assets/skills/css.png" class="skillItem"></v-img></v-col>
           <v-col cols="3"><v-img src="../assets/skills/javascript.png" class="skillItem"></v-img></v-col>
           <v-col cols="3"><v-img src="../assets/skills/wordpress.png" class="skillItem"></v-img></v-col>
