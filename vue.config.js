@@ -6,7 +6,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
   outputDir: path.resolve(__dirname, "./docs"),
-  publicPath: "./",
+  publicPath: "/portfolio/",
   pluginOptions: {
     vuetify: {
       // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
