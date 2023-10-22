@@ -10,16 +10,16 @@
       <div class="header">Technical Skills</div>
       <v-container>
         <v-row align-content="center">
-          <v-col cols="3"><v-img src="../assets/skills/html5.png" class="skillItem"></v-img></v-col>
-          <v-col cols="3"><v-img src="../assets/skills/css.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/html5.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/css.png" class="skillItem"></v-img></v-col>
           <v-col cols="3"><v-img src="../assets/skills/javascript.png" class="skillItem"></v-img></v-col>
-          <v-col cols="3"><v-img src="../assets/skills/wordpress.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/wordpress.png" class="skillItem"></v-img></v-col>
         </v-row>
         <v-row align-content="center">
-          <v-col cols="3"><v-img src="../assets/skills/java.png" class="skillItem"></v-img></v-col>
-          <v-col cols="3"><v-img src="../assets/skills/mysql.png" class="skillItem"></v-img></v-col>
-          <v-col cols="3"><v-img src="../assets/skills/AdobeXD.png" class="skillItem"></v-img></v-col>
-          <v-col cols="3"><v-img src="../assets/skills/figma.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/java.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/mysql.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/AdobeXD.png" class="skillItem"></v-img></v-col>
+          <v-col cols="3"><v-img src="/portfolio/figma.png" class="skillItem"></v-img></v-col>
         </v-row>
       </v-container>
     </div>
