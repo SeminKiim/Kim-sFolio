@@ -2,7 +2,7 @@
   <div>
     <div id="greetings">
       <div class="hey">Hey there!</div>
-      <div class="title">안녕하세요.<br>빠르게 배우는 김세민입니다.</div>
+      <div class="title">안녕하세요.<br>정확한 근거로 고객의 니즈를 파악하는 기획자<br>김세민입니다.</div>
     </div>
   </div>
   <div>
@@ -43,7 +43,7 @@
               data-aos="fade-up"></v-img></v-col>
           <v-col cols="9" data-aos="fade-up" class="info">
             <v-row class="info-header">하계 글로벌 진로취업연수</v-row>
-            <v-row>2022.07</v-row>
+            <v-row>2022.07 수료</v-row>
           </v-col>
         </v-row>
         <v-row>
@@ -60,7 +60,7 @@
   </div>
 
   <div id="portfolio">
-    <div class="header">포트폴리오</div>
+    <div class="header">Portfolio</div>
 
   </div>
 
@@ -123,31 +123,23 @@ export default defineComponent({
 </script>
 
 <style lang="less">
-@font-face {
-  font-family: 'Atomy-Bold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Atomy-Bold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 #greetings {
   height: 100vh;
-  font-family: 'Atomy-Bold';
   color: #6b4d38;
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #f7f2f0;
-  padding: 10%;
+  padding: 12%;
+  font-weight: bold;
 
   .hey {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 50px;
+    font-weight: bolder;
   }
 }
 
 #skills {
-  font-family: 'Atomy-Bold';
   color: #f7f2f0;
   font-size: 1.3rem;
   background-color: #6b4d38;
@@ -161,7 +153,6 @@ export default defineComponent({
 }
 
 #timeline {
-  font-family: 'Atomy-Bold';
   color: #6b4d38;
   font-size: 1.3rem;
   background-color: #f7f2f0;
@@ -182,7 +173,6 @@ export default defineComponent({
 
 
 #portfolio {
-  font-family: 'Atomy-Bold';
   color: #f7f2f0;
   font-size: 1.3rem;
   background-color: #6b4d38;
@@ -207,7 +197,6 @@ export default defineComponent({
 
 
 #contact {
-  font-family: 'Atomy-Bold';
   color: #6b4d38;
   font-size: 1.3rem;
   background-color: #f7f2f0;
