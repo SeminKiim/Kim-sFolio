@@ -86,11 +86,6 @@ import aos from 'aos'
 
 export default defineComponent({
   name: 'HomeView',
-  data() {
-    return {
-
-    };
-  },
 
   components: {
     Swiper,
