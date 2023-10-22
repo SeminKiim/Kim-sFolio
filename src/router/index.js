@@ -6,12 +6,12 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => HomeView
+    component: HomeView
   },
 
   {
     path: '/portfolio1',
-    component: () => Portfolio
+    component: Portfolio
   }
 ]
 
