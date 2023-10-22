@@ -2,7 +2,7 @@
   <div>
     <div id="greetings">
       <div class="hey">Hey there!</div>
-      <div class="title">안녕하세요.<br>정확한 근거로 고객의 니즈를 파악하는 기획자<br>김세민입니다.</div>
+      <div class="title">안녕하세요.<br>정확한 근거로 고객의 니즈를 파악하는 서비스 기획자<br>김세민입니다!</div>
     </div>
   </div>
   <div>
@@ -43,7 +43,9 @@
               data-aos="fade-up"></v-img></v-col>
           <v-col cols="9" data-aos="fade-up" class="info">
             <v-row class="info-header">하계 글로벌 진로취업연수</v-row>
-            <v-row>2022.07 수료</v-row>
+            <v-row>- International Mentor Group Australia</v-row>
+            <v-row>- Samsung SDS Australia</v-row>
+            <v-row>- 2022.07 수료</v-row>
           </v-col>
         </v-row>
         <v-row>
@@ -61,7 +63,12 @@
 
   <div id="portfolio">
     <div class="header">Portfolio</div>
-
+    <div class="list">
+      <v-img class="item" src='../assets/kimjangtalk.png' cover></v-img>
+      <v-img class="item" src='../assets/report.png' cover></v-img>
+      <v-img class="item" src='../assets/GreenEarth.png' cover></v-img>
+      <v-img class="item" src='../assets/RestInPet.png' cover></v-img>
+    </div>
   </div>
 
   <div id="contact">
@@ -176,16 +183,16 @@ export default defineComponent({
 
   .list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
 
     .item {
       width: 100%;
       background-position: center center;
       background-size: cover;
-      border-radius: 20px;
+      border-radius: 5px;
       //비율 1:1
-      aspect-ratio: 1/1;
+      aspect-ratio: 16/9;
     }
   }
 }
