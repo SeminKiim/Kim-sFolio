@@ -11,7 +11,7 @@ const routes = [
 
   {
     path: '/portfolio1',
-    component: () => Portfolio1
+    component: () => Portfolio
   }
 ]
 
