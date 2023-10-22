@@ -12,14 +12,4 @@ module.exports = defineConfig({
       // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vuetify-loader
     }
   }
-})
-
-module.exports = {
-  configureWebpack: {
-    optimization: {
-      splitChunks: {
-        chunks: 'all',
-      },
-    },
-  },
-};
+});
