@@ -1,11 +1,16 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import KimJangTalk from '../views/Kimjangtalk.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/kimjangtalk-businessmodel',
+    component: KimJangTalk
   }
 ]
 

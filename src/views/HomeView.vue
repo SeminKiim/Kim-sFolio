@@ -64,15 +64,20 @@
   <div id="portfolio">
     <div class="header">Portfolio</div>
     <div class="list">
-      <v-img class="item" src='../assets/kimjangtalk.png' cover></v-img>
+      <v-img class="item" src='../assets/kimjangtalk.png' cover @click="movePage('/kimjangtalk-businessmodel')"></v-img>
       <v-img class="item" src='../assets/report.png' cover></v-img>
-      <v-img class="item" src='../assets/GreenEarth.png' cover></v-img>
+      <a href="https://jtk4.amumu.kr"><v-img class="item" src='../assets/GreenEarth.png' cover></v-img></a>
       <v-img class="item" src='../assets/RestInPet.png' cover></v-img>
     </div>
   </div>
 
   <div id="contact">
     <div class="header">Contact</div>
+    <v-row>
+      <v-col><v-icon icon="mdi-phone"></v-icon><span> +82 010-9259-6758</span></v-col>
+      <v-col><v-icon icon="mdi-email-outline"></v-icon><span> seminik62@gmail.com</span></v-col>
+      <v-col><v-icon icon="mdi-github"></v-icon><a href="https://github.com/SeminKiim">Click Here!</a></v-col>
+    </v-row>
 
   </div>
 </template>
@@ -85,9 +90,6 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
-
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
 
 import aos from 'aos'
 
