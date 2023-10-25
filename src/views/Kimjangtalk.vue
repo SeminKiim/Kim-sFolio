@@ -7,7 +7,8 @@
         <div>도농상생프로젝트의 일환으로,<br>아동이 있는 가족을 대상으로 한 김장 체험 프로그램 입니다.</div>
     </div>
     <div id="show">
-        <v-btn href="https://drive.google.com/file/d/1yeqqXrV8drO22bOhmXfUtCeS0JM8XhJ5/view">비즈니스 모델 보러 가기</v-btn>
+        <v-btn href="https://drive.google.com/file/d/1yeqqXrV8drO22bOhmXfUtCeS0JM8XhJ5/view?usp=sharing">비즈니스 모델 보러
+            가기</v-btn>
     </div>
 </template>
 
