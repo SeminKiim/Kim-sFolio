@@ -66,7 +66,7 @@
     <div class="list">
       <v-img class="item" src='../assets/kimjangtalk.png' cover @click="movePage('/kimjangtalk-businessmodel')"></v-img>
       <v-img class="item" src='../assets/report.png' cover></v-img>
-      <a href="https://jtk4.amumu.kr"><v-img class="item" src='../assets/GreenEarth.png' cover></v-img></a>
+      <v-img class="item" src='../assets/GreenEarth.png' cover @click="movePage('/green-earth')"></v-img>
       <v-img class="item" src='../assets/RestInPet.png' cover></v-img>
     </div>
   </div>

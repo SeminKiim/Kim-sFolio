@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import KimJangTalk from '../views/Kimjangtalk.vue'
+import GreenEarth from '../views/GreenEarth.vue'
 
 const routes = [
   {
@@ -11,6 +12,10 @@ const routes = [
   {
     path: '/kimjangtalk-businessmodel',
     component: KimJangTalk
+  },
+  {
+    path: 'green-earth',
+    component: GreenEarth
   }
 ]
 
