@@ -31,7 +31,14 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition; // 스크롤 위치 복원 비활성화
+    } else {
+      return { x: 0, y: 0 }; // 페이지 이동 시 맨 위로 스크롤
+    }
+  },
 })
 
 export default router

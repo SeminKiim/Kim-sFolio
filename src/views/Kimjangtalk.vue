@@ -2,7 +2,7 @@
     <header>
         <div @click="movePage('/')">Hey there!</div>
     </header>
-    <div class="description">
+    <div id="description">
         <div class="title">'김장톡 프로젝트'는</div>
         <div>도농상생프로젝트의 일환으로,<br>아동이 있는 가족을 대상으로 한 김장 체험 프로그램 입니다.</div>
     </div>
@@ -33,11 +33,11 @@ header {
     font-weight: bold;
 }
 
-.description {
+#description {
     font-size: 2rem;
     padding: 10%;
-    color: #6b4d38;
-    background-color: #f7f2f0;
+    background-color: #6b4d38;
+    color: #f7f2f0;
     height: 100vh;
     font-size: 36px;
 
@@ -51,7 +51,8 @@ header {
 
 #show {
     padding: 10%;
-    background-color: #6b4d38;
-    align-items: center;
+    color: #6b4d38;
+    background-color: #f7f2f0;
+    text-align: center;
 }
 </style>

@@ -2,7 +2,9 @@
   <div>
     <div id="greetings">
       <div class="hey">Hey there!</div>
-      <div class="title">안녕하세요.<br>정확한 근거로 고객의 니즈를 파악하는 서비스 기획자<br>김세민입니다!</div>
+      <div class="title">안녕하세요.</div>
+      <div classs="title">정확한 근거로 고객의 니즈를 파악하는 서비스 기획자</div>
+      <div class="title">김세민입니다!</div>
     </div>
   </div>
   <div>
@@ -63,6 +65,7 @@
 
   <div id="portfolio">
     <div class="header">Portfolio</div>
+    <div class="cap">썸네일을 클릭해보세요!</div>
     <div class="list">
       <v-img class="item" src='../assets/kimjangtalk.png' cover @click="movePage('/kimjangtalk-businessmodel')"></v-img>
       <v-img class="item" src='../assets/report.png' cover @click="movePage('/business-plan')"></v-img>
@@ -180,13 +183,14 @@ export default defineComponent({
   color: #f7f2f0;
   font-size: 1.3rem;
   background-color: #6b4d38;
-
+  text-align: center;
   padding: 10%;
 
   .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin-top: 50px;
 
     .item {
       width: 100%;
@@ -196,6 +200,10 @@ export default defineComponent({
       //비율 1:1
       aspect-ratio: 16/9;
     }
+  }
+
+  .cap {
+    color: #DDDDEE;
   }
 }
 
