@@ -3,7 +3,8 @@
     <div id="greetings">
       <div class="hey">Hey there!</div>
       <div class="title">안녕하세요.</div>
-      <div classs="title">정확한 근거로 고객의 니즈를 파악하는 서비스 기획자</div>
+      <div classs="title">톡톡 튀는 아이디어와</div>
+      <div class="title">정확한 근거로 고객의 니즈를 파악하는 서비스 기획자</div>
       <div class="title">김세민입니다!</div>
     </div>
   </div>
@@ -206,7 +207,6 @@ export default defineComponent({
     color: #DDDDEE;
   }
 }
-
 
 #contact {
   color: #6b4d38;
