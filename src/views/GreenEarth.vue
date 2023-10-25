@@ -7,7 +7,6 @@
         <div>도농상생프로젝트의 일환으로,<br>아동이 있는 가족을 대상으로 한 김장 체험 프로그램 입니다.</div>
     </div>
     <div class="pdf-wrapper">
-        <vue-pdf-app></vue-pdf-app>
     </div>
 </template>
 
