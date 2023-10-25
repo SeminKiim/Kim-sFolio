@@ -4,9 +4,11 @@
     </header>
     <div class="description">
         <div class="title">'Green Earth'웹사이트는</div>
-        <div>도농상생프로젝트의 일환으로,<br>아동이 있는 가족을 대상으로 한 김장 체험 프로그램 입니다.</div>
+        <div>지구를 생각하는 가상의 환경 보호단체인 Green Earth의 웹진(Web-zine)</div>
+        <div></div>
     </div>
-    <div class="pdf-wrapper">
+    <div id="show">
+        <v-btn href="https://jtk4.amumu.kr">Green Earth 웹사이트 보러 가기</v-btn>
     </div>
 </template>
 
@@ -44,5 +46,11 @@ header {
         height: 30vh;
         text-align: center;
     }
+}
+
+#show {
+    padding: 10%;
+    background-color: #6b4d38;
+    align-items: center;
 }
 </style>
