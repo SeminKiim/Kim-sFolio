@@ -77,9 +77,10 @@
   <div id="contact">
     <div class="header">Contact</div>
     <v-row>
-      <v-col><v-icon icon="mdi-phone"></v-icon><span> +82 010-9259-6758</span></v-col>
-      <v-col><v-icon icon="mdi-email-outline"></v-icon><span> seminik62@gmail.com</span></v-col>
-      <v-col><v-icon icon="mdi-github"></v-icon><a href="https://github.com/SeminKiim">Click Here!</a></v-col>
+      <v-col class="contact"><v-icon icon="mdi-phone"></v-icon><span> +82 010-9259-6758</span></v-col>
+      <v-col class="contact"><v-icon icon="mdi-email-outline"></v-icon><span> seminik62@gmail.com</span></v-col>
+      <v-col class="contact"><v-icon icon="mdi-github"></v-icon><a href="https://github.com/SeminKiim">Click
+          Here!</a></v-col>
     </v-row>
 
   </div>
@@ -178,7 +179,6 @@ export default defineComponent({
   }
 }
 
-
 #portfolio {
   color: #f7f2f0;
   font-size: 1.3rem;
@@ -213,6 +213,10 @@ export default defineComponent({
   font-size: 1.3rem;
   background-color: #f7f2f0;
   padding: 10%;
+
+  .contact {
+    text-align: center;
+  }
 }
 
 .header {

@@ -4,10 +4,16 @@
     </header>
     <div class="description">
         <div class="title">'김장톡 프로젝트'의 사업계획서</div>
-        <div>'김장톡 프로젝트'의 사업계획서로,<br>비즈니스 나인 블럭으로 설계한 비즈니스 모델의 사업화를 가정하고 작성해본 문서입니다.</div>
+        <div class="period">2021.03 ~ 2021.06</div>
+        <div>'김장톡 프로젝트'의 사업계획서로,<br>비즈니스 나인 블럭으로 설계한 아이템을 실제 사업화 한다 가정하고 작성한 문서입니다.</div>
+        <div></div>
     </div>
+
     <div id="show">
-        <v-btn href="https://drive.google.com/file/d/1DRkEEiAI-3ckbRE430tWUTGhrOs564n5/view?usp=sharing">사업계획서 보러 가기</v-btn>
+        <v-btn href="https://drive.google.com/file/d/1DRkEEiAI-3ckbRE430tWUTGhrOs564n5/view?usp=sharing" rounded="xl"
+            color="#DDDDEE">사업계획서
+            보러
+            가기</v-btn>
     </div>
 </template>
 
@@ -43,8 +49,14 @@ header {
     .title {
         font-size: 2em;
         font-weight: bold;
-        height: 30vh;
+        height: 20vh;
         text-align: center;
+    }
+
+    .period {
+        font-size: 0.5em;
+        text-align: center;
+        height: 15vh;
     }
 }
 
