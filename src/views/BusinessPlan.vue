@@ -24,8 +24,6 @@ export default {
 </script>
 
 <style lang="less">
-@import "https://unpkg.com/vue-pdf-app@2.0.0/dist/icons/main.css";
-
 header {
     color: #6b4d38;
     background-color: #f7f2f0;

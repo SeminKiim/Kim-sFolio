@@ -65,9 +65,9 @@
     <div class="header">Portfolio</div>
     <div class="list">
       <v-img class="item" src='../assets/kimjangtalk.png' cover @click="movePage('/kimjangtalk-businessmodel')"></v-img>
-      <v-img class="item" src='../assets/report.png' cover></v-img>
+      <v-img class="item" src='../assets/report.png' cover @click="movePage('/business-plan')"></v-img>
       <v-img class="item" src='../assets/GreenEarth.png' cover @click="movePage('/green-earth')"></v-img>
-      <v-img class="item" src='../assets/RestInPet.png' cover></v-img>
+      <v-img class="item" src='../assets/RestInPet.png' cover @click="movePage('/rest-in-pet')"></v-img>
     </div>
   </div>
 
